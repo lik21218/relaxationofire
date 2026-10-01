@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея приключений кота и вороны</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Подключаем иконки Font Awesome для красоты -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+  </head>
+  <body>
+
+    <!-- Фоновое видео со звуком (размучено) -->
+    <video autoplay loop class="bg-video" id="bg-video">
+        <source src="./video/01.mp4" type="video/mp4">
+        Ваш браузер не поддерживает видео.
+    </video>
+
+    <!-- Кнопка управления звуком видео -->
+    <button id="audio-control-btn" class="audio-btn" title="Включить / Выключить звук">
+      <i class="fa-solid fa-volume-xmark" id="audio-icon"></i> Звук
+    </button>
+
+    <header class="header">
+      <h1>
+        <i class="fa-solid cat-icon">🐾</i> История кота-Бизнесмена и
+        героической вороны
+      </h1>
+      <p>Нажми на любую картинку, чтобы рассмотреть её в деталях</p>
+
+      <!-- НАВИГАЦИЯ: ПЕРЕКЛЮЧАТЕЛИ ТАБОВ (ГЛАВ) -->
+      <nav class="site-nav">
+        <button class="nav-link active" data-target="chapter-1">Глава 1: Бизнес у вечного огня</button>
+        <button class="nav-link" data-target="chapter-2">Глава 2: В случае провала в Ад, претенции не имею</button>
+        <button class="nav-link" data-target="chapter-3">Глава 3: Караул ! помогите !</button>
+        <button class="nav-link" data-target="chapter-4">Глава 4: Неплохо бизнес попёр</button>
+      </nav>
+    </header>
+
+    <!-- ================= ГЛАВА 1 ================= -->
+    <main id="chapter-1" class="tab-content active gallery-grid">
+      <!-- Карточка 1 -->
+      <div class="card" data-title="Кот, Ворона и Вечный Мангал" data-desc="Кот в очках и с рюкзаком и его партнер ворона решили открыть бизнес прямо на Вечном огне..." data-img="images/1.jpg">
+        <img src="images/1.jpg" alt="Кот, Ворона и Вечный Мангал" />
+        <div class="card-info">
+          <h3>Кот, Ворона и Вечный Мангал</h3>
+          <p>Вечный Мангал...</p>
+        </div>
+      </div>
+      <!-- Карточка 2 -->
+      <div class="card" data-title="Вечный огонь Земли" data-desc="На Земле есть места, где огонь никогда не гаснет..." data-img="images/2.jpg">
+        <img src="images/2.jpg" alt="Подача блюда" />
+        <div class="card-info">
+          <h3>Вечный огонь Земли</h3>
+          <p>Именно к такому месту пришли ...</p>
+        </div>
+      </div>
+      <!-- Карточка 3 -->
+      <div class="card" data-title="Договор Кота Босса" data-desc="У кота есть договор с чертями..." data-img="images/3.jpg">
+        <img src="images/3.jpg" alt="Турист поперхнулся" />
+        <div class="card-info">
+          <h3>Договор Кота Босса</h3>
+          <p>что какой-нибудь турист свалится в этот...</p>
+        </div>
+      </div>
+      <!-- Карточка 4 -->
+      <div class="card" data-title="Доставка для Кот-Босса" data-desc="Тем временем черти жарили котлеты..." data-img="images/4.jpg">
+        <img src="images/4.jpg" alt="Героическое спасение" />
+        <div class="card-info">
+          <h3>Доставка для Кот-Босса</h3>
+          <p>Тем временем черти жарили котлеты ...</p>
+        </div>
+      </div>
+      <!-- Карточка 5 -->
+      <div class="card" data-title="Девиз под вечным костром" data-desc="Чем больше туристов, тем больше котлет..." data-img="images/5.jpg">
+        <img src="images/5.jpg" alt="Новые правила" />
+        <div class="card-info">
+          <h3>Девиз под вечным костром</h3>
+          <p>Чем больше туристов, тем больше котле»</p>
+        </div>
+      </div>
+      <!-- Карточка 6 -->
+      <div class="card" data-title="Маленькие поварята вечного огня" data-desc="Малыши-чертята тоже поварят..." data-img="images/6.jpg">
+        <img src="images/6.jpg" alt="Верные друзья" />
+        <div class="card-info">
+          <h3>Маленькие поварята вечного огня</h3>
+          <p>Малыши-чертята тоже поварят...</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= ГЛАВА 2 ================= -->
+    <main id="chapter-2" class="tab-content gallery-grid">
+      <div class="card" data-title="Eternal Fire Grill & Tour"
+        data-desc=" Котенок решил начать бизнес на этой экзотической достопримечательности. Он открыл место для туристов, которые хотят попробовать кебабы, приготовленные прямо над вечным огнем — гриль, приключение и никаких сожалений"
+        data-img="images/7.jpg">
+        <img src="images/7.jpg" alt="Вирусный успех" />
+        <div class="card-info"><h3>Eternal Fire Grill & Tour</h3><p>Котенок решил начать бизнес на этой...</p></div>
+      </div>
+
+      <div class="card" data-title=" Ресепшн у Врат Ада"
+        data-desc=" На ресепшене ворона регистрирует туристов. Каждый должен подписать документ: В случае падения в ад, претензий не имею. Бизнес идет полным ходом."
+        data-img="images/8.jpg">
+        <img src="images/8.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3> Ресепшн у Врат Ада</h3><p>На ресепшене ворона регистрирует туристов...</p></div>
+      </div>
+
+      <div class="card" data-title="Заказ с перчинкой"
+        data-desc="Один шизанутый турист орёт и тычет пальцем: I want a grill from that crow over there! — хочет эту ворону в гриле. Кот в шоке, а ворона делает вид, что не слышит."
+        data-img="images/9.jpg">
+        <img src="images/9.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Заказ с перчинкой</h3><p>Один шизанутый турист орёт и тычет пальцем...</p></div>
+      </div>
+
+      <div class="card" data-title="Желание клиента — закон"
+        data-desc=" Шизанутый турист захотел ворону на гриле — получит ворону. Но из глины. Котенок-босс лично лепит ее в пещере у вечного огня, пока малыши-чертята лепят горшки. Клиент подавится от такой экзотики."
+        data-img="images/10.jpg">
+        <img src="images/10.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Желание клиента — закон</h3><p>Шизанутый турист захотел ворону на гриле...</p></div>
+      </div>
+
+      <div class="card" data-title="Жаркое из глиняной вороны — спецзаказ"
+        data-desc="Желание клиента — закон. Хотел ворону на гриле — получи. Кот-босс исполнил спецзаказ: жаркое из глиняной вороны, с дымком от вечного огня. Подавится, но будет доволен."
+        data-img="images/11.jpg">
+        <img src="images/11.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Жаркое из глиняной вороны — спецзаказ</h3><p>Желание клиента — закон. Хотел ворону...</p></div>
+      </div>
+
+      <div class="card" data-title=" Вот ваш заказ, приятного аппетита!"
+        data-desc=" Глиняная ворона на гриле подана. Шизанутый турист в восторге — он наконец получил желаемое. Все остальные туристы завидуют и тоже теперь хотят ворону на гриле, а кот-босс доволен — бизнес процветает."
+        data-img="images/12.jpg">
+        <img src="images/12.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3> Вот ваш заказ, приятного аппетита!</h3><p>Глиняная ворона на гриле подана...</p></div>
+      </div>
+    </main>
+
+    <!-- ================= ГЛАВА 3 ================= -->
+    <main id="chapter-3" class="tab-content gallery-grid">
+      <!-- Карточки для 3 главы -->
+        <div class="card" data-title=" Карма за спецзаказ"
+        data-desc="Шизанутый любитель вороны на гриле упал на землю и чуть не умер, подавившись глиняной вороной. Настоящая ворона вытащила деревяшку у него изо рта. Турист страшно испугался и заорал, перепугав всю публику — все бросились бежать. Кот сбежал, алабаи сбежали, даже ворона не рада. Everyone ran. The cat ran. The two Alabais ran. Even the crow wasn't happy."
+        data-img="images/13.jpg">
+        <img src="images/13.jpg" alt="Вирусный успех" />
+        <div class="card-info"><h3> Карма за спецзаказ</h3><p>Everyone ran. The cat ran. The two Alabais ran...</p></div>
+      </div>
+
+      <div class="card" data-title="Паника на Eternal Fire BBQ"
+        data-desc=" Кот-бизнесмен и все туристы бросились бежать от крика на всякий случай. Кто его знает, какой сюрприз может выдать эта экзотика. Он упал, он упал, и все запаниковали. Котенок убежал отсюда первым, прямо через провал к вечному огню. He fell, and He fell, and everyone panicked. The kitten ran away from here."
+        data-img="images/14.jpg">
+        <img src="images/14.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Паника на Eternal Fire BBQ</h3><p>He fell, and He fell, and everyone panicked..</p></div>
+      </div>
+
+      <div class="card" data-title="Все побежали"
+        data-desc="Алабаи тоже дали дёру, тоже на всякий случай за своим боссом. Если босс чует опасность — значит опасность подошла близко. Котенок рванул первым, два алабая за ним, ворона тоже недовольна и улетает. А туристы бегут следом, сами не зная от чего. Everyone ran. The cat ran. The two Alabais ran. Even the crow wasn't happy."
+        data-img="images/15.jpg">
+        <img src="images/15.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Все побежали</h3><p>Everyone ran. The cat ran. The two Alabais ran...</p></div>
+      </div>
+
+      <div class="card" data-title="Инстинкт спасения"
+        data-desc=" Алабаи удирают от яростных туристов, а туристы спешат за ними. Потому что собаки очень чувствительны к катастрофам и все решили — собаки знают, как выйти из зоны бедствия. Босс-котенок где-то впереди, а за ним его верные алабаи ведут за собой всю толпу. The two Alabai dogs also gave chase."
+        data-img="images/16.jpg">
+        <img src="images/16.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Инстинкт спасения</h3><p>The two Alabai dogs also gave chase...</p></div>
+      </div>
+
+      <div class="card" data-title=" Спасение"
+        data-desc="Турист понял, что он не помер и что его спасла ворона, которую он хотел съесть приготовленную на гриле. Он смотрит на ворону и перестал кричать. Ворона держит в клюве ту самую глиняную ворону, которую он проглотил. The crow grabbed the clay crow with its beak and pulled it out of the tourist's throat.."
+        data-img="images/17.jpg">
+        <img src="images/17.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3> Спасение</h3><p>The crow grabbed the clay crow with its beak...</p></div>
+      </div>
+
+      <div class="card" data-title=" Зря спасли"
+        data-desc=" Все успокоились. Кот-бизнесмен вернулся к туристу и вороне и думает мысленно: зря его спасли, я ведь хотел его подарить чертям. А турист тем временем пришел в себя и гладит ворону — ту самую, которую хотел съесть на гриле. The tourist came to, and patted the crow."
+        data-img="images/18.jpg">
+        <img src="images/18.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3> Зря спасли</h3><p>The tourist came to, and patted the crow...</p></div>
+      </div>
+    </main>
+
+    <!-- ================= ГЛАВА 4 ================= -->
+    <main id="chapter-4" class="tab-content gallery-grid">
+      <!-- Карточки для 4 главы -->
+       <div class="card" data-title=" Бизнес продолжается"
+        data-desc="Толпы туристов ищут острые ощущения. Все думают — он провалится в Ад, а я нет. Кот-бизнесмен снова за прилавком Eternal Fire BBQ, жарит на вечном огне, а на заднем плане огонь рвется прямо из земли. Адвентюра и отличный вкус — очередь не кончается. Grilled in a real eternal fire! Traditional camel meat burgers!"
+        data-img="images/19.jpg">
+        <img src="images/19.jpg" alt="Вирусный успех" />
+        <div class="card-info"><h3>Вирусный успех</h3><p>Grilled in a real eternal fire!...</p></div>
+      </div>
+
+      <div class="card" data-title=" Проходите, бараны, на шашлык"
+        data-desc="Бизнес расширяется. Кот-бизнесмен с рюкзаком сидит на камне у вечного огня и думает: проходите, бараны, на шашлык. В Аду будет очень интересно. А внизу толпы туристов, два ворона на вывеске NOW: Tours, Food, Hell Adventre, Photo Zone, Souvenirs — и маленький котенок в очках зазывает всех в тур. The cat thinks: come on in, sheep, for barbecue. It will be very interesting in Hell."
+        data-img="images/20.jpg">
+        <img src="images/20.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Проходите, бараны, на шашлык</h3><p>The cat thinks: come on in, sheep, for barbecue...</p></div>
+      </div>
+
+      <div class="card" data-title="Our business went viral!"
+        data-desc="На следующий день... Кот думает: проходите, вирусы, вы на месте. Бизнес завирусился — толпы туристов снимают на телефоны, а на экранах уже его котенок-помощник в очках. Вывеска NOW: Tours, Food, Hell Adventre, Photo Zone, Souvenirs — все по плану. Кот-бизнесмен смотрит на горы и понимает, что Ад теперь — главная достопримечательность. The next day... Our business went viral!"
+        data-img="images/21.jpg">
+        <img src="images/21.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Подсчет монет</h3><p>The next day... Our business went viral!...</p></div>
+      </div>
+
+      <div class="card" data-title="Новые правила для спокойного бизнеса"
+        data-desc=" После вирусного хайпа кот BOSS ввел новые инструкции. На табличке у вечного огня теперь написано: No crow dishes! No extra wishes! If you see a clay bird - don't touch! If you fall - it's your own fault! Кот и ворона в оранжевых очках теперь партнеры по бизнесу — спокойный бизнес продолжается. New instructions for a calm business."
+        data-img="images/22.jpg">
+        <img src="images/22.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Новые правила для спокойного бизнеса</h3><p>New instructions for a calm business...</p></div>
+      </div>
+
+      <div class="card" data-title="Правила спокойного бизнеса"
+        data-desc="After that day, there were new rules: No crow dishes, No extra wishes, If you see a clay bird - don't touch, If you fall - it's your own fault! :) Кот BOSS отдыхает на камне у таблички, ему незачем беспокоиться, когда его друг ворон — напарник в бизнесе. Well... that's the business, my friend. Кот отдыхает, бизнес работает сам."
+        data-img="images/23.jpg">
+        <img src="images/23.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Правила спокойного бизнеса</h3><p>Кот отдыхает, бизнес работает сам...</p></div>
+      </div>
+
+      <div class="card" data-title="Финал. Спокойный бизнес"
+        data-desc="А потом наступила ночь. Вечный огонь горел синим и оранжевым, луна вышла полная, и все туристы наконец ушли спать. Бизнес больше не был про шашлык. Бизнес был про правила. Про то, что ворону не едят. Что лишних желаний не загадывают. Что глиняную птицу не трогают. И что если упал — то это твои проблемы, дружок. Конец истории про кота-бизнесмена и Eternal Fire BBQ."
+        data-img="images/24.jpg">
+        <img src="images/24.jpg" alt="Подсчет монет" />
+        <div class="card-info"><h3>Финал. Спокойный бизнес</h3><p>Конец истории про кота-бизнесмена и Eternal Fire BBQ...</p></div>
+      </div>
+    </main>
+
+    <!-- ЕДИНСТВЕННЫЙ ТЕГ DIALOG ДЛЯ ВСЕХ МОДАЛОК -->
+    <dialog id="imageModal" class="modal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModalBtn">&times;</button>
+        <div class="modal-image-wrapper">
+          <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-text">
+          <h2 id="modalTitle">Заглавие</h2>
+          <p id="modalDesc">Описание картинки...</p>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- СКРИПТ: ПЕРЕКЛЮЧЕНИЕ ТАБОВ, МОДАЛКА И ВИДЕОЗВУК -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // --- 1. ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК (ТАБОВ) ---
+        const navButtons = document.querySelectorAll(".site-nav .nav-link");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        navButtons.forEach(button => {
+          button.addEventListener("click", () => {
+            // Убираем активные классы у всех кнопок и табов
+            navButtons.forEach(btn => btn.classList.remove("active"));
+            tabContents.forEach(tab => tab.classList.remove("active"));
+
+            // Добавляем активный класс нажатой кнопке
+            button.classList.add("active");
+
+            // Находим и показываем целевой таб
+            const targetId = button.getAttribute("data-target");
+            const targetTab = document.getElementById(targetId);
+            if (targetTab) {
+              targetTab.classList.add("active");
+            }
+          });
+        });
+
+        // --- 2. УПРАВЛЕНИЕ МОДАЛЬНЫМ ОКНОМ ---
+        const modal = document.getElementById("imageModal");
+        if (modal) {
+          const modalImg = document.getElementById("modalImg");
+          const modalTitle = document.getElementById("modalTitle");
+          const modalDesc = document.getElementById("modalDesc");
+          const closeBtn = document.getElementById("closeModalBtn");
+
+          // Делегирование событий для карточек на любых табах
+          document.addEventListener("click", (e) => {
+            const card = e.target.closest(".card");
+            if (card) {
+              modalImg.src = card.dataset.img;
+              modalTitle.textContent = card.dataset.title;
+              modalDesc.textContent = card.dataset.desc;
+              modal.showModal();
+            }
+          });
+
+          closeBtn.addEventListener("click", () => modal.close());
+
+          modal.addEventListener("click", (event) => {
+            const rect = modal.getBoundingClientRect();
+            const isInDialog =
+              event.clientX >= rect.left &&
+              event.clientX <= rect.right &&
+              event.clientY >= rect.top &&
+              event.clientY <= rect.bottom;
+            if (!isInDialog) modal.close();
+          });
+        }
+
+        // --- 3. УПРАВЛЕНИЕ ЗВУКОМ ВИДЕОФОНА (БЕЗ ПРЕЖДЕВРЕМЕННЫХ ОБРЫВОВ) ---
+        const video = document.getElementById("bg-video");
+        const audioBtn = document.getElementById("audio-control-btn");
+        const audioIcon = document.getElementById("audio-icon");
+
+        if (video && audioBtn) {
+          video.volume = 0.4;
+          video.muted = true;
+
+          const enableSound = () => {
+            video.muted = false;
+            video.play().then(() => {
+              audioIcon.className = "fa-solid fa-volume-high";
+              audioBtn.classList.add("playing");
+              document.removeEventListener("click", enableSound);
+              document.removeEventListener("keydown", enableSound);
+            }).catch(err => console.log("Ожидание клика:", err));
+          };
+
+          document.addEventListener("click", enableSound);
+          document.addEventListener("keydown", enableSound);
+
+          audioBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (video.muted) {
+              video.muted = false;
+              video.play();
+              audioIcon.className = "fa-solid fa-volume-high";
+              audioBtn.classList.add("playing");
+            } else {
+              video.muted = true;
+              audioIcon.className = "fa-solid fa-volume-xmark";
+              audioBtn.classList.remove("playing");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
